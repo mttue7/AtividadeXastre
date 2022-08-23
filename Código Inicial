@@ -13,27 +13,23 @@ int gera_vetor(){
     return vetor;
 }
 
-float media()
-{
-    int v=gera_vetor();
-    float m;
+float media(float vetor[]){
+  float media, soma = 0;
+  int i;
 
-    for(int i=0;i<1000;i++){
+  for(i =0; i<1000; i++){
+    soma = soma + vetor[i];
+  }
 
-        int s=s+v[i];
-        }
-
-    printf("Media: %.2f",s/1000);
-
-    return;
+  printf("%.2f", soma/1000);
+  return 0;
 }
-
 
 int main()
 {
-    float maior,menor;
-
-    gera_vetor();
+    int vetor;
+    vetor=gera_vetor();
+    media(vetor);
 
     return 0;
 }

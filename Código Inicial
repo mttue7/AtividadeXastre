@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int gera_vetor(){
+
+    int vetor;
+    for(int i=0;i<1000;i++)
+    {
+        vetor=rand()%9999;
+        printf(" %d",vetor);
+    }
+
+    return vetor;
+}
+
+float media()
+{
+    int v=gera_vetor();
+    float m;
+
+    for(int i=0;i<1000;i++){
+
+        int s=s+v[i];
+        }
+
+    printf("Media: %.2f",s/1000);
+
+    return;
+}
+
+
+int main()
+{
+    float maior,menor;
+
+    gera_vetor();
+
+    return 0;
+}
